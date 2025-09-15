@@ -143,7 +143,7 @@ const Svg = exports.Svg = {
     // Add the CSS styles, if requested
     //
     if (args.styles) {
-      SVG = SVG.replace(/<defs>/, `<defs>\n${CSS}`);
+      SVG = SVG.replace(/<defs>/, `<defs>\n<style>${CSS}</style>`);
     }
     //
     // Return the defs plus the SVG output.
